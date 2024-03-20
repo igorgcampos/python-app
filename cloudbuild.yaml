@@ -9,7 +9,6 @@ steps:
            '--region', 'us-east4',
            '--platform', 'managed',
            '--allow-unauthenticated',
-           '--port', '5000',
            '--set-env-vars=FLASK_APP=app.py']
 images:
   - 'gcr.io/$PROJECT_ID/sua-imagem:$SHORT_SHA'
