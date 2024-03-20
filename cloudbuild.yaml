@@ -6,7 +6,7 @@ steps:
   - name: 'gcr.io/cloud-builders/gcloud'
     args: ['run', 'deploy', 'pythonapp',
            '--image', 'gcr.io/$PROJECT_ID/sua-imagem:$SHORT_SHA',
-           '--region', 'us-eas4',
+           '--region', 'us-east4',
            '--platform', 'managed',
            '--allow-unauthenticated']
 images:
